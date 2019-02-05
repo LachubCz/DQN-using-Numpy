@@ -95,7 +95,7 @@ class neural_network():
         """
         method loads model
         """
-        with open("{}.pkl".format(name), "rb") as model:
+        with open("{}".format(name), "rb") as model:
             tmp_model = pickle.load(model)
 
         self.l1_weights = tmp_model.l1_weights
