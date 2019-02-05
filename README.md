@@ -1,5 +1,5 @@
 # Implementation of DQN using just Numpy
-
+[![Build Status](https://travis-ci.org/LachubCz/DQN-using-Numpy.svg?branch=master)](https://travis-ci.org/LachubCz/DQN-using-Numpy) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/0ebf810ab4524818a61a8958d48570c2)](https://www.codacy.com/app/LachubCz/DQN-using-Numpy?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=LachubCz/DQN-using-Numpy&amp;utm_campaign=Badge_Grade)
 
 Application implements DQN using just Numpy for environment FrozenLake. 
 
