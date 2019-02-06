@@ -3,17 +3,6 @@
 
 Application implements DQN using just Numpy. Thereafter the DQN agent is adapted for the FrozenLake environment, which is also implemented using just Numpy. 
 
-### Training modes:
-
-**Map mode** shows agent's moves in the FrozenLake environment during learning.
-<img src="https://raw.githubusercontent.com/LachubCz/DQN-using-Numpy/master/images/map.gif" height="300"/>
-
-**Weights mode** shows weights of neural network during training.
-<img src="https://raw.githubusercontent.com/LachubCz/DQN-using-Numpy/master/images/weights.gif" height="250"/>
-
-**Stats mode** prints outcome of every training round util agent's learns the way.
-<img src="https://raw.githubusercontent.com/LachubCz/DQN-using-Numpy/master/images/stats.gif" height="300"/>
-
 Usage
 -----
 ##### python3 q_learning.py  [-mode mode] [-r_mode r_mode] [-model model]
@@ -30,6 +19,17 @@ Examples
     python3 q_learning.py -mode train -r_mode weights
     python3 q_learning.py -mode train -r_mode stats
     python3 q_learning.py -mode test -model model.pkl
+
+Training modes
+-----------------
+**Map mode** shows agent's moves in the FrozenLake environment during learning.
+<img src="https://raw.githubusercontent.com/LachubCz/DQN-using-Numpy/master/images/map.gif" height="300"/>
+
+**Weights mode** shows weights of neural network during training.
+<img src="https://raw.githubusercontent.com/LachubCz/DQN-using-Numpy/master/images/weights.gif" height="250"/>
+
+**Stats mode** prints outcome of every training episode.
+<img src="https://raw.githubusercontent.com/LachubCz/DQN-using-Numpy/master/images/stats.gif" height="300"/>
 
 ****
 ###### Created by: Petr Buchal
