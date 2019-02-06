@@ -26,10 +26,10 @@ Training modes
 **Map mode** shows agent's moves in the FrozenLake environment during learning.
 <img src="https://raw.githubusercontent.com/LachubCz/DQN-using-Numpy/master/images/map.gif" height="300"/>
 
-**Weights mode** shows weights of neural network during training.
+**Weights mode** shows Q-values for every state-action pair during training.
 <img src="https://raw.githubusercontent.com/LachubCz/DQN-using-Numpy/master/images/weights.gif" height="250"/>
 
-**Stats mode** prints outcome of every training episode.            
+**Stats mode** prints outcomes of training episodes.            
 <img src="https://raw.githubusercontent.com/LachubCz/DQN-using-Numpy/master/images/stats.gif" height="300"/>
 
 ****
