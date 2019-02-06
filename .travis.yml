@@ -1,0 +1,10 @@
+language: python
+python:
+  - 3.5
+install: 
+  - pip install -r requirements.txt
+script: 
+  - python3 q_learning.py -mode train -r_mode map
+  - python3 q_learning.py -mode train -r_mode weights
+  - python3 q_learning.py -mode train -r_mode stats
+  - python3 q_learning.py -mode test -model model.pkl
