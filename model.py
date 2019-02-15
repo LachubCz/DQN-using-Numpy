@@ -35,7 +35,7 @@ class neural_network():
         """
         method implements backpropagation
         """
-        for epoch in range(epochs):  
+        for _ in range(epochs):
         #Forward propagation
             #First layer
             u1 = np.dot(x, self.l1_weights) + self.l1_biases
@@ -65,7 +65,7 @@ class neural_network():
 
             self.l2_weights -= self.learning_rate * g_l2
             self.l2_biases -= self.learning_rate * d_l2b.sum(axis=0)
-        
+
         #Return actual loss
         return np.mean(np.subtract(y, l2o)**2)
 

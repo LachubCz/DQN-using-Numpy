@@ -20,7 +20,7 @@ def get_args():
     parser.add_argument("-r_mode", action="store", dest="r_mode",
                         choices=["weights", "map", "stats"], default="stats",
                         help="render mode for training")
-    parser.add_argument("-model", action="store", dest="model", 
+    parser.add_argument("-model", action="store", dest="model",
                         help="name of file which contains already trained model")
     args = parser.parse_args()
 
@@ -84,7 +84,7 @@ def fill_memory(env, memory):
     """
     method fills memory before learning
     """
-    for eps in range(10000):
+    for _ in range(10000):
         state = env.reset()
         last_position = env.position
 
@@ -156,8 +156,8 @@ def train_main(r_mode):
                 action = np.random.randint(0, 4, size=1)[0]
 
             next_state, reward, done = env.step(action)
-            
-            for i, item in enumerate(already):
+
+            for _, item in enumerate(already):
                 flag = True
                 for e, elem in enumerate(next_state):
                     if item[e] != elem:
@@ -208,10 +208,10 @@ def test_main(model_name):
     state = env.reset()
     env.render()
     done = False
-    for step in range(100):
+    for _ in range(100):
         time.sleep(0.5)
         action = np.argmax(model.predict(np.array([state])))
-        next_state, reward, done = env.step(action)
+        next_state, _, done = env.step(action)
         state = next_state
         env.render()
         if done:

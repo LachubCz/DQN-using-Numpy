@@ -103,17 +103,17 @@ class FrozenLake:
         method renders environment with actual q-values
         """
         string = format_matrix(['','0','', '','1','', '','2','','', '3',''],
-                            [[42, q_values[0][0], 42, 42, q_values[1][0], 42, 42, q_values[2][0], 42, 42, q_values[3][0], 42], 
+                            [[42, q_values[0][0], 42, 42, q_values[1][0], 42, 42, q_values[2][0], 42, 42, q_values[3][0], 42],
                              [q_values[0][3], 42.001, q_values[0][1], q_values[1][3], 42.002, q_values[1][1], q_values[2][3], 42.002, q_values[2][1], q_values[3][3], 42.002, q_values[3][1]],
-                             [42, q_values[0][2], 42, 42, q_values[1][2], 42, 42, q_values[2][2], 42, 42, q_values[3][2], 42], 
+                             [42, q_values[0][2], 42, 42, q_values[1][2], 42, 42, q_values[2][2], 42, 42, q_values[3][2], 42],
                              [42, q_values[4][0], 42, 42, q_values[5][0], 42, 42, q_values[6][0], 42, 42, q_values[7][0], 42],
-                             [q_values[4][3], 42.002, q_values[4][1], q_values[5][3], 42.003, q_values[5][1], q_values[6][3], 42.002, q_values[6][1], q_values[7][3], 42.003, q_values[7][1]], 
-                             [42, q_values[4][2], 42, 42, q_values[5][2], 42, 42, q_values[6][2], 42, 42, q_values[7][2], 42], 
+                             [q_values[4][3], 42.002, q_values[4][1], q_values[5][3], 42.003, q_values[5][1], q_values[6][3], 42.002, q_values[6][1], q_values[7][3], 42.003, q_values[7][1]],
+                             [42, q_values[4][2], 42, 42, q_values[5][2], 42, 42, q_values[6][2], 42, 42, q_values[7][2], 42],
                              [42, q_values[8][0], 42, 42, q_values[9][0], 42, 42, q_values[10][0], 42, 42, q_values[11][0], 42],
-                             [q_values[8][3], 42.002, q_values[8][1], q_values[9][3], 42.002, q_values[9][1], q_values[10][3], 42.002, q_values[10][1], q_values[11][3], 42.003, q_values[11][1]], 
-                             [42, q_values[8][2], 42, 42, q_values[9][2], 42, 42, q_values[10][2], 42, 42, q_values[11][2], 42], 
+                             [q_values[8][3], 42.002, q_values[8][1], q_values[9][3], 42.002, q_values[9][1], q_values[10][3], 42.002, q_values[10][1], q_values[11][3], 42.003, q_values[11][1]],
+                             [42, q_values[8][2], 42, 42, q_values[9][2], 42, 42, q_values[10][2], 42, 42, q_values[11][2], 42],
                              [42, q_values[12][0], 42, 42, q_values[13][0], 42, 42, q_values[14][0], 42, 42, q_values[15][0], 42],
-                             [q_values[12][3], 42.003, q_values[12][1], q_values[13][3], 42.002, q_values[13][1], q_values[14][3], 42.002, q_values[14][1], q_values[15][3], 42.004, q_values[15][1]], 
+                             [q_values[12][3], 42.003, q_values[12][1], q_values[13][3], 42.002, q_values[13][1], q_values[14][3], 42.002, q_values[14][1], q_values[15][3], 42.004, q_values[15][1]],
                              [42, q_values[12][2], 42, 42, q_values[13][2], 42, 42, q_values[14][2], 42, 42, q_values[15][2], 42]],
                             '{:^{}}', '{:<{}}', '{:>{}.3f}', '\n', ' | ')
         string = string.replace('42.001', '   S  ')
