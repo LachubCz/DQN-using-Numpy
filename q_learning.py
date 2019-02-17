@@ -96,7 +96,7 @@ def fill_memory(env, memory):
             action = np.random.randint(0, 4, size=1)[0]
             next_state, reward, done = env.step(action)
 
-            for i, item in enumerate(already):
+            for _, item in enumerate(already):
                 flag = True
                 for e, elem in enumerate(next_state):
                     if item[e] != elem:
